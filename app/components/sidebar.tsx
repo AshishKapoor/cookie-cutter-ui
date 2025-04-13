@@ -91,7 +91,7 @@ export function Sidebar({ expanded, toggleSidebar }: SidebarProps) {
             } ${expanded ? "gap-3" : "justify-center"}`}
           >
             <Settings className="h-4 w-4" />
-            {expanded && <span>Profile</span>}
+            {expanded && <span>General</span>}
           </Link>
         </nav>
       </div>

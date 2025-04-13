@@ -78,7 +78,7 @@ export function CommandMenu() {
               onSelect={() => runCommand(() => navigate("/settings"))}
             >
               <User className="mr-2 h-4 w-4" />
-              <span>Profile</span>
+              <span>General</span>
               {/* <CommandShortcut>⌘S</CommandShortcut> */}
             </CommandItem>
           </CommandGroup>

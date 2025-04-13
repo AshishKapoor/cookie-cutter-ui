@@ -88,24 +88,15 @@ export default function UserSettingsPage() {
       </Typography>
       <Tabs defaultValue="profile" className="space-y-6">
         <TabsList className="w-full justify-start p-0">
-          <TabsTrigger
-            value="profile"
-            className="rounded-none border-transparent px-4 py-2 data-[state=active]:border-primary data-[state=active]:bg-transparent"
-          >
+          <TabsTrigger value="profile">
             <User className="mr-2 h-4 w-4" />
             Profile
           </TabsTrigger>
-          <TabsTrigger
-            value="account"
-            className="rounded-none border-transparent px-4 py-2 data-[state=active]:border-primary data-[state=active]:bg-transparent"
-          >
+          <TabsTrigger value="account">
             <Key className="mr-2 h-4 w-4" />
             Account
           </TabsTrigger>
-          <TabsTrigger
-            value="notifications"
-            className="rounded-none border-transparent px-4 py-2 data-[state=active]:border-primary data-[state=active]:bg-transparent"
-          >
+          <TabsTrigger value="notifications">
             <Bell className="mr-2 h-4 w-4" />
             Notifications
           </TabsTrigger>
