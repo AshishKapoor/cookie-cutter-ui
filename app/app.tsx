@@ -1,26 +1,24 @@
-import { ThemeProvider } from "@/components/theme-provider";
-import { Button } from "@/components/ui/button";
 import "@/assets/styles/globals.css";
-import { ModeToggle } from "./components/mode-toggle";
-import Typography from "./components/ui/typography";
+import { DashboardLayout } from "@/components/dashboard-layout";
+import { ThemeProvider } from "@/components/theme-provider";
+import { Route, Routes } from "react-router-dom";
+import DashboardPage from "./pages/dashboard";
+import NotFound from "./pages/not-found";
+import UserSettingsPage from "./pages/settings";
+import UsersPage from "./pages/users";
 
 function App() {
   return (
     <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
-      <div className="absolute top-4 right-4">
-        <ModeToggle />
-        <img
-          src="app/assets/images/logo/logo.webp"
-          alt="Vite logo"
-          className="h-8 w-8"
-        />
-      </div>
-      <div className="flex flex-col h-screen items-center justify-center bg-background">
-        <Typography variant="h1" className="text-2xl">
-          Hello World!
-        </Typography>
-        <Button>Hello</Button>
-      </div>
+      <DashboardLayout>
+        <Routes>
+          <Route path="/" element={<DashboardPage />} />
+          <Route path="/home" element={<DashboardPage />} />
+          <Route path="/users" element={<UsersPage />} />
+          <Route path="/settings" element={<UserSettingsPage />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </DashboardLayout>
     </ThemeProvider>
   );
 }
