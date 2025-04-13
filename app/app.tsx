@@ -1,5 +1,5 @@
 import "@/assets/styles/globals.css";
-import { DashboardLayout } from "@/components/dashboard-layout";
+import DashboardLayout from "@/components/dashboard-layout";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Route, Routes } from "react-router-dom";
 import DashboardPage from "@/pages/dashboard";
