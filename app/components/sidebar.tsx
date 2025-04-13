@@ -1,20 +1,15 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import {
-  ChevronLeft,
-  ChevronRight,
-  Home,
-  Settings,
-  Users
-} from "lucide-react";
-import { Link } from "react-router-dom";
+import { ChevronLeft, ChevronRight, Home, Settings, Users } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 interface SidebarProps {
   expanded: boolean;
   toggleSidebar: () => void;
 }
 
 export function Sidebar({ expanded, toggleSidebar }: SidebarProps) {
+  const location = useLocation();
   return (
     <div
       className={`hidden md:flex h-full flex-col border-r bg-background transition-all duration-300 ${
@@ -57,7 +52,9 @@ export function Sidebar({ expanded, toggleSidebar }: SidebarProps) {
           <Link
             to="/home"
             className={`flex items-center rounded-md px-3 py-2 text-sm font-medium ${
-              location.pathname === "/home" ? "bg-muted" : "hover:bg-muted"
+              location.pathname === "/home"
+                ? "bg-muted text-primary-background"
+                : "hover:bg-muted"
             } ${expanded ? "gap-3" : "justify-center"}`}
           >
             <Home className="h-4 w-4" />
@@ -66,7 +63,9 @@ export function Sidebar({ expanded, toggleSidebar }: SidebarProps) {
           <Link
             to="/users"
             className={`flex items-center rounded-md px-3 py-2 text-sm font-medium ${
-              location.pathname === "/users" ? "bg-muted" : "hover:bg-muted"
+              location.pathname === "/users"
+                ? "bg-muted text-primary-background"
+                : "hover:bg-muted"
             } ${expanded ? "gap-3" : "justify-center"}`}
           >
             <Users className="h-4 w-4" />
@@ -86,7 +85,9 @@ export function Sidebar({ expanded, toggleSidebar }: SidebarProps) {
           <Link
             to="/settings"
             className={`flex items-center rounded-md px-3 py-2 text-sm font-medium ${
-              location.pathname === "/settings" ? "bg-muted" : "hover:bg-muted"
+              location.pathname === "/settings"
+                ? "bg-muted text-primary-background"
+                : "hover:bg-muted"
             } ${expanded ? "gap-3" : "justify-center"}`}
           >
             <Settings className="h-4 w-4" />

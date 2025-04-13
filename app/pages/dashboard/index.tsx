@@ -48,7 +48,7 @@ const DashboardPage = () => {
             <Typography variant="p">42</Typography>
             <Typography
               variant="p"
-              className="text-xs text-muted-foreground mt-1" 
+              className="text-xs text-muted-foreground mt-1"
             >
               +3 from last month
             </Typography>
@@ -70,8 +70,13 @@ const DashboardPage = () => {
                   {item}
                 </div>
                 <div>
-                  <Typography variant="p" >Activity Item {item}</Typography>
-                  <Typography variant="p" className="text-xs text-muted-foreground mt-1" >2 hours ago</Typography>
+                  <Typography variant="p">Activity Item {item}</Typography>
+                  <Typography
+                    variant="p"
+                    className="text-xs text-muted-foreground mt-1"
+                  >
+                    2 hours ago
+                  </Typography>
                 </div>
               </div>
             ))}
