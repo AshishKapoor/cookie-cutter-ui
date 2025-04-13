@@ -5,7 +5,7 @@ import Typography from "@/components/ui/typography";
 const DashboardPage = () => {
   return (
     <div className="p-6">
-      <Typography variant="h1" className="text-2xl font-bold mb-4">
+      <Typography variant="h1" className="mb-4">
         Dashboard
       </Typography>
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">

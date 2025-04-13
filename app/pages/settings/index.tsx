@@ -19,6 +19,7 @@ import {
 import { Switch } from "@/components/ui/switch";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Textarea } from "@/components/ui/textarea";
+import Typography from "@/components/ui/typography";
 import { Bell, Key, User } from "lucide-react";
 
 // Mock user data - in a real app, you would fetch this based on the ID
@@ -81,7 +82,10 @@ const getUserData = (id: string) => {
 
 export default function UserSettingsPage() {
   return (
-    <div className="mx-4 py-8">
+    <div className="p-6">
+      <Typography variant="h1" className="mb-4">
+        Settings
+      </Typography>
       <Tabs defaultValue="profile" className="space-y-6">
         <TabsList className="w-full justify-start p-0">
           <TabsTrigger
@@ -123,7 +127,11 @@ export default function UserSettingsPage() {
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="email">Email Address</Label>
-                  <Input id="email" type="email" defaultValue={getUserData("1").email} />
+                  <Input
+                    id="email"
+                    type="email"
+                    defaultValue={getUserData("1").email}
+                  />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="phone">Phone Number</Label>
@@ -131,11 +139,18 @@ export default function UserSettingsPage() {
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="location">Location</Label>
-                  <Input id="location" defaultValue={getUserData("1").location} />
+                  <Input
+                    id="location"
+                    defaultValue={getUserData("1").location}
+                  />
                 </div>
                 <div className="space-y-2 md:col-span-2">
                   <Label htmlFor="bio">Bio</Label>
-                  <Textarea id="bio" rows={4} defaultValue={getUserData("1").bio} />
+                  <Textarea
+                    id="bio"
+                    rows={4}
+                    defaultValue={getUserData("1").bio}
+                  />
                 </div>
               </div>
             </CardContent>

@@ -1,9 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import {
-  CardDescription,
-  CardTitle
-} from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import Typography from "@/components/ui/typography";
 import { Search } from "lucide-react";
@@ -51,14 +47,10 @@ const users = [
 export default function UsersPage() {
   return (
     <div className="mx-auto p-6">
-      <Typography variant="h1" className="pb-4"></Typography>
       <div className="flex items-center justify-between">
-        <div>
-          <CardTitle className="text-2xl">Users</CardTitle>
-          <CardDescription>
-            Manage your team members and their account permissions.
-          </CardDescription>
-        </div>
+        <Typography variant="h1" className="mb-4">
+          Users
+        </Typography>
         <Button>Add User</Button>
       </div>
       <div className="mt-4 relative">
