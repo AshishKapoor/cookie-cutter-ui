@@ -1,10 +1,7 @@
 # Frontend Template
 
-1. Vite + pnpm with swc bundler
-2. Shadcn components + typography
-
 ## Screenshot
-<img width="1912" alt="Screenshot 2025-04-13 at 5 52 44 PM" src="https://github.com/user-attachments/assets/dcc99808-0728-4ec1-80f3-2cd99d915630" />
+![Screenshot 2025-04-14 at 11 05 40 AM](https://github.com/user-attachments/assets/5089d241-c7b1-4c92-b879-6f0c7e55a85f)
 
 ## Getting Started
 
