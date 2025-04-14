@@ -9,6 +9,7 @@
   src: url("/fonts/inter-regular.woff2") format("woff2");
 }
 
+/* Note: https://tweakcn.com/ is your friend to customize your styles */
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.26 0 0);

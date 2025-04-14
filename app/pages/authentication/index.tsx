@@ -22,7 +22,7 @@ export default function AuthenticationPage() {
             </Link>
 
             {/* Left side - Brand section */}
-            <div className="hidden lg:flex h-full flex-col p-10 text-black bg-background">
+            <div className="hidden lg:flex h-full flex-col p-10 text-foreground bg-background">
               <div className="relative z-20 flex items-center text-lg font-medium">
                 <img
                   src="/images/logo/logo.webp"
