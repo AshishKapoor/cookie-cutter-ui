@@ -83,7 +83,7 @@ const getUserData = (id: string) => {
 export default function UserSettingsPage() {
   return (
     <div className="p-6">
-      <Typography variant="h1" className="mb-4">
+      <Typography variant="h2" className="mb-4">
         Settings
       </Typography>
       <Tabs defaultValue="profile" className="space-y-6">
